@@ -1,2 +1,2 @@
-# The_Odin_Project
+# The Odin Project
 My progress in The Odin Project
