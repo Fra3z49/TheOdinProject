@@ -78,9 +78,6 @@
     height: 150px;
     width: 150px;
     margin: 20px;
-
-    
-    
 }
 
 .boxinfo {
@@ -89,4 +86,31 @@
 
 .title3 {
 text-align: center;
+}
+
+
+/*flexbox 4*/
+
+.flexbox4 {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+}
+
+.quote {
+    display: flex;
+    border: 2px solid black;
+    text-align: center;
+    margin: 50px;
+    flex-direction: column;
+
+
+}
+
+.author {
+    font: bold;
+    text-align: right;
 }
