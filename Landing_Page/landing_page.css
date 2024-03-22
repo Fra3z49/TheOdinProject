@@ -1,0 +1,61 @@
+
+.container {
+    display: flex;
+    border: 2px solid black;
+    flex-direction: column;
+}
+
+.header /*Left*/ {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+}
+
+.header_links /*right*/ {
+    display: flex;
+    gap: 4px;
+    flex-direction: row;
+    margin: 5px;
+    align-items: center;
+}
+
+
+/*Flexbox 1 below header*/
+
+.flexbox1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fbinfo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px;
+}
+
+.bb {
+    border: 2px solid black;
+}
+
+.button1{
+    color: red;
+}
+
+.img1 {
+    background-color: gray;
+    height: 200px;
+    width: auto;
+}
+
+.flexbox3 {
+    border: 2px solid red;
+    display: flex;
+}
