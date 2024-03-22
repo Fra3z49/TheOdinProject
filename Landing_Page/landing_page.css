@@ -92,20 +92,16 @@ text-align: center;
 /*flexbox 4*/
 
 .flexbox4 {
-    display: flex;
     flex: auto;
-    align-items: center;
     flex-direction: column;
-    height: 200px;
     justify-content: center;
 }
 
 .quote {
     display: flex;
-    border: 2px solid black;
     text-align: center;
-    margin: 50px;
     flex-direction: column;
+    align-items: center;
 
 
 }
@@ -113,4 +109,34 @@ text-align: center;
 .author {
     font: bold;
     text-align: right;
+}
+
+/*Flexbox 5*/
+
+.flexbox5 {
+    display: flex;
+    flex-direction: column;
+}
+
+.background {
+    display: flex;
+    background-color: grey;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 10px;
+
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: center;
+
+}
+
+.take_action{
+    display: flex;
+    background-color: yellow;
+    margin: 20px;
 }
