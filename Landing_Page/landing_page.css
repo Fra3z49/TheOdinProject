@@ -55,7 +55,38 @@
     width: auto;
 }
 
+
+
+/*Flexbox 3*/
+
 .flexbox3 {
-    border: 2px solid red;
     display: flex;
+    flex-direction: column;
+}
+
+.info_boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.box {
+    border: 2px solid rgb(79, 79, 129);
+    border-radius: 10px;
+    flex-grow: 0;
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+
+    
+    
+}
+
+.boxinfo {
+    text-align: center;
+}
+
+.title3 {
+text-align: center;
 }
