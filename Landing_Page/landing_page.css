@@ -1,4 +1,60 @@
 
+/*Website colors and fonts*/
+
+.logo, .header, .flexbox5, .fbinfo, .container, .flexbox5{
+    background-color: #1F2937;
+}
+
+.quote {
+   background-color: #E5E7Eb;
+   font-size: 36px; 
+   font-weight: lighter;
+   font-style: italic;
+   color: #1F2937;
+}
+
+.box_info {
+    color:rgb(228, 223, 223);
+}
+
+.title3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(228, 223, 223);
+}
+
+.fbinfo {
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+
+.header_small_text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAfA;
+}
+
+.header_links {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.flexbox5 {
+    background-color: #E5E7EB;
+}
+
+.button3{
+    color: #3882F6;
+}
+
+
+/*Main Website Strucure*/
+
 .container {
     display: flex;
     border: 2px solid black;
@@ -137,6 +193,5 @@ text-align: center;
 
 .take_action{
     display: flex;
-    background-color: yellow;
     margin: 20px;
 }
