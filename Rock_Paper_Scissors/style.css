@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: navy;
+    flex-direction: column;
+
+}
+
+.fail {
+    color: red;
+    text-decoration: underline;
+    display: flex;
+}
+
+.link {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+
+.wincontainer {
+    background-color: rgb(73, 73, 196);
+    display: flex;
+    justify-content:center;
+
+}
+
+
+
+.win {
+ color: rgb(59, 209, 59);
+}
