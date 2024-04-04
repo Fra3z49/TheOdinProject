@@ -62,37 +62,48 @@ async function playGame() {
     let losses = 0;
     let ties = 0;
 
+
+    //Shows is the user won, lost, or ties in the round
     const console = document.querySelector('#console');
     const add_element = document.createElement('p');
+
+    //Shows the user the amount of points they have in wins, loses, and ties with the computer.
+    const points_console = document.querySelector('#score');
+    const score_element = document.createElement('p');
 
     for (let i = 0; i < 5; i++) {
         let result = await roundScore();
         if (result === 1) {
             wins++;
             //console.log("Win");
-            add_element.textContent = "Win"
+            add_element.textContent = "Win";
+            score_element.textContent = "Wins: " + wins + " | " + "Loses: " + losses + " | " + "Ties: " + ties
 
         } else if (result === 0) {
             losses++;
             //console.log("Lose");
-            add_element.textContent = "Lose"
+            add_element.textContent = "Lose";
+            score_element.textContent = "Wins: " + wins + " | " + "Loses: " + losses + " | " + "Ties: " + ties
+
         } else {
             ties++;
             //console.log("Tie");
-            add_element.textContent = "Tie"
+            add_element.textContent = "Tie";
+            score_element.textContent = "Wins: " + wins + " | " + "Loses: " + losses + " | " + "Ties: " + ties
         }
-        console.appendChild(add_element)
+        console.appendChild(add_element);
+        points_console.appendChild(score_element)
     }
 
-    console.log("Wins: " + wins + ", Losses: " + losses + ", Ties: " + ties);
+    
 
     if (wins > losses) {
         redirectToPage("win.html");
-        console.log("Player wins the championship!");
+        
 
     } else if (wins < losses) {
         redirectToPage("lose.html");
-        console.log("Hit the lockers and come out when you want to actually play!");
+        
         
     } else {
         console.log("It's a tie!");
@@ -103,5 +114,4 @@ async function playGame() {
 function redirectToPage(pageName) {
     window.location.href = pageName;
 }
-
 playGame();
