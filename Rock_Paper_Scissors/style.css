@@ -32,3 +32,9 @@
 .win {
  color: rgb(59, 209, 59);
 }
+
+.tie {
+    display: flex;
+    background: gray;
+    color: white;
+}

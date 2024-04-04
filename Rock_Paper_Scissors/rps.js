@@ -79,10 +79,6 @@ async function playGame() {
     const score_element = document.createElement('p');
 
 
-
-
-    
-
     for (let i = 1; i <= max_rounds; i++) {
         let result = await roundScore();
         if (result === 1) {
@@ -122,7 +118,7 @@ async function playGame() {
         
         
     } else {
-        console.log("It's a tie!");
+        redirectToPage('tie.php')
     }
 }
 
