@@ -62,18 +62,26 @@ async function playGame() {
     let losses = 0;
     let ties = 0;
 
+    const console = document.querySelector('#console');
+    const add_element = document.createElement('p');
+
     for (let i = 0; i < 5; i++) {
         let result = await roundScore();
         if (result === 1) {
             wins++;
-            console.log("Win");
+            //console.log("Win");
+            add_element.textContent = "Win"
+
         } else if (result === 0) {
             losses++;
-            console.log("Lose");
+            //console.log("Lose");
+            add_element.textContent = "Lose"
         } else {
             ties++;
-            console.log("Tie");
+            //console.log("Tie");
+            add_element.textContent = "Tie"
         }
+        console.appendChild(add_element)
     }
 
     console.log("Wins: " + wins + ", Losses: " + losses + ", Ties: " + ties);
