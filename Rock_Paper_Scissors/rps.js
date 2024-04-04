@@ -58,7 +58,7 @@ function playGame() {
     let losses = 0;
     let ties = 0;
 
-    for (let i = 0; i <= 5; i++) {
+    for (let i = 0; i ; i++) {
         let result = roundScore();
         if (result === 1) {
             wins++;
