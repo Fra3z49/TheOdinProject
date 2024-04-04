@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+}
+
+.square {
+    width: calc(960px / 16);
+    height: calc(960px / 16);
+    border: 1px solid #ccc;
+}
+
+.square:hover {
+    background-color: black;
+}
