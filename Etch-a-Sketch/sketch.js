@@ -36,4 +36,4 @@ resetButton.addEventListener('click', () => {
 });
 
 // Initialize grid
-createGrid(16);
+createGrid(32);

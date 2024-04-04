@@ -1,12 +1,12 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    width: 960px;
+    width: 480px;
 }
 
 .square {
-    width: calc(960px / 16);
-    height: calc(960px / 16);
+    width: calc(480px / 32);
+    height: calc(480px / 32);
     border: 1px solid #ccc;
 }
 
