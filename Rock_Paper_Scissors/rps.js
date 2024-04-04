@@ -61,7 +61,14 @@ async function playGame() {
     let wins = 0;
     let losses = 0;
     let ties = 0;
+    let rounds = 10;
 
+    //sets the max amount of rounds per game.
+    let max_rounds = 10;
+
+    //Shows the current round.
+    const round_console = document.querySelector('#round');
+    const round_element = document.createElement('p');
 
     //Shows is the user won, lost, or ties in the round
     const console = document.querySelector('#console');
@@ -71,28 +78,37 @@ async function playGame() {
     const points_console = document.querySelector('#score');
     const score_element = document.createElement('p');
 
-    for (let i = 0; i < 5; i++) {
+
+
+
+    
+
+    for (let i = 1; i <= max_rounds; i++) {
         let result = await roundScore();
         if (result === 1) {
             wins++;
             //console.log("Win");
             add_element.textContent = "Win";
             score_element.textContent = "Wins: " + wins + " | " + "Loses: " + losses + " | " + "Ties: " + ties
+            round_element.textContent = 'Round: ' + i + "of " + rounds
 
         } else if (result === 0) {
             losses++;
             //console.log("Lose");
             add_element.textContent = "Lose";
             score_element.textContent = "Wins: " + wins + " | " + "Loses: " + losses + " | " + "Ties: " + ties
+            round_element.textContent = 'Round: ' + i + "of " + rounds
 
         } else {
             ties++;
             //console.log("Tie");
             add_element.textContent = "Tie";
             score_element.textContent = "Wins: " + wins + " | " + "Loses: " + losses + " | " + "Ties: " + ties
+            round_element.textContent = 'Round: ' + i + "of " + rounds
         }
         console.appendChild(add_element);
         points_console.appendChild(score_element)
+        round_console.appendChild(round_element)
     }
 
     
