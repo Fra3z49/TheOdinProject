@@ -21,3 +21,6 @@ rad.json
 #Test results file
 TestResults.xml
 #Other files.
+test.js
+test.php
+test.css
