@@ -1,0 +1,52 @@
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#display {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#add,
+button#subtract,
+button#multiply,
+button#divide,
+button#equal {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+button#clear,
+button#backspace {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+button#decimal {
+    background-color: #008CBA; /* Blue */
+    color: white;
+}
+
+/* Additional styling for hover effects */
+button:hover {
+    opacity: 0.8;
+}
